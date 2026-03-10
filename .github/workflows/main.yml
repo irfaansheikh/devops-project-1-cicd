@@ -18,8 +18,6 @@ jobs:
         with:
           username: s4sheikh
           password: ${{ secrets.DOCKER_TOKEN }}
-        env:
-          CICDSECRET3ENV: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build Docker image
         run: docker build -t s4sheikh/devops-cicd-app1 .
