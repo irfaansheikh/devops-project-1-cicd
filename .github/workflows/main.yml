@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-cicd-app1 .
-
+ 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-cicd-app1
 
